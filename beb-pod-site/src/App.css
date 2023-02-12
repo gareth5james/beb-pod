@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+main {
+  padding: 5px;
+}
+
+@media only screen and (min-width: 800px) {
+  main {
+    width: 800px;
+    margin: auto;
+    min-height: 200vh;
+  }
+}
+
+.header__link {
+  text-decoration: none;
+  color: rgb(86, 128, 200);
+}
+
+.header__link:clicked {
+  color: rgb(86, 128, 200);
+}
+
+.app__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__welcome__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.app__hours {
+  margin-top: 30px;
+}
+
+.app__hours__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  font-size: 0.9em;
+  width: 90%;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  .app__hours__list {
+    width: 500px;
+    font-size: 1.2em;
+  }
+}
+
+.app__hours__list__day {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.app__header__letterImage {
+  height: 1em;
+}
+
+.app__header__logo {
+  height: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: -0.3em;
+}
+
+.contact__form {
+  display: table;
+  margin: auto;
+}
+
+.contact__form label {
+  display: table-cell;
+}
+
+.contact__form p { 
+  display: table-row; 
+}
+
+.contact__form input {
+  display: table-cell;
+  width: 80%;
+}
+
+.contact__form textarea {
+  resize: none;
+  display: table-cell;
+  width: 80%;
+}
+
+.contact__form button {
+  display: table-cell
+}
+
+.app__about__pod, .app__about__staff {
+  margin: auto;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.app__about__pod img, .app__about__staff img {
+  width: 100px;
+  border-radius: 50%;
+}
