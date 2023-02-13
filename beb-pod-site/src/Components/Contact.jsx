@@ -1,15 +1,17 @@
+import Map from "./Map";
+
 function Contact() {
     return <main>
         <div className="app__contact">
         <div className="app__contact__address">
         <h2>Located at:</h2>
         <p>
-        Bebington Podiatry<br/>
+        <a className="app__contact__link" target="blank" href="https://goo.gl/maps/drn1WZcx4erXdkke8">Bebington Podiatry<br/>
         270 Heath Road<br/>
         Higher Bebington<br/>
         Wirral<br/>
         Merseyside<br/>
-        CH63 2HQ<br/><br/>
+        CH63 2HQ<br/><br/></a>
         annjames.bebpod@btinternet.com<br/>
         0151 608 0927 (24hrs)</p>
         </div>
@@ -31,12 +33,15 @@ function Contact() {
         Wear a face covering - we are a health facility committed to the safety of our patients
         and staff and entry will be refused if you are not wearing a face covering.<br/><br/>
         Please DO NOT ATTEND if you have/have symptoms of covid 19</p>
-        <form className="contact__form" action="mailto:gareth5james@yahoo.co.uk" method="post" enctype="text/plain">
+        <h3>Email us</h3>
+        <form className="contact__form" action="mailto:annjames.bebpod@btinternet.com" method="post" enctype="text/plain">
         <p><label htmlFor="Name">Name: </label><input type="text" name="Name"/></p>
         <p><label htmlFor="Email">Email: </label><input type="text" name="Email"/></p>
-        <p><label htmlFor="Message">Message: </label><textarea name="Message" rows="2" cols="40"/></p>
+        <p><label htmlFor="Phone">Phone: </label><input type="text" name="Phone"/></p>
+        <p><label htmlFor="Message">Message: </label><textarea name="Message" rows="4" cols="40"/></p>
         <p><label></label><button type="submit">Submit</button></p>
         </form>
+        <Map />
     </main>
 }
 
