@@ -11,12 +11,6 @@ html {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -78,7 +72,7 @@ main {
   list-style: none;
   padding-left: 0;
   margin: 0 auto;
-  font-size: 0.9em;
+  font-size: 0.85em;
   width: 90%;
   padding-bottom: 10px;
 }
@@ -223,4 +217,8 @@ nav a{
 
 .app__contact__link:clicked {
   color:white;
+}
+
+#fb {
+  width: 50px;
 }
