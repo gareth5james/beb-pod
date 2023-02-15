@@ -1,9 +1,9 @@
-import ann from "../resources/ann.webp"
-import amanda from "../resources/amanda.webp"
-import annette from "../resources/annette.webp"
-import elaine from "../resources/elaine.webp"
-import rob from "../resources/rob.webp"
-import annie from "../resources/annie.webp"
+import ann from "../resources/ann-square.webp"
+import amanda from "../resources/amanda-square.webp"
+import annette from "../resources/annette-square.webp"
+import elaine from "../resources/elaine-square.webp"
+import rob from "../resources/rob-square.webp"
+import annie from "../resources/annie-square.webp"
 
 function About() {
     return <main>

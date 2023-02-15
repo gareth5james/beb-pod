@@ -147,6 +147,7 @@ nav {
 .app__about__pod img, .app__about__staff img {
   width: 100px;
   border-radius: 50%;
+  margin-top: 15px;
 }
 
 .footer__link {
