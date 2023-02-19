@@ -28,8 +28,7 @@ function Contact() {
         <h2>At your appointment</h2>
         <p>Please attend on time - we are still staggering appointments to operate
         social distancing and allow thorough cleaning of each surgery between patients.<br/><br/>
-        Please wash your hands on entry in the sink indicated by your podiatrist. We are still
-        checking temperatures too.<br/><br/>
+        Please wash your hands on entry in the sink indicated by your podiatrist.<br/><br/>
         Wear a face covering - we are a health facility committed to the safety of our patients
         and staff and entry will be refused if you are not wearing a face covering.<br/><br/>
         Please DO NOT ATTEND if you have/have symptoms of covid 19</p>

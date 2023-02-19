@@ -223,3 +223,23 @@ nav a{
 #fb {
   width: 50px;
 }
+
+.new__patient__list {
+  text-align: left;
+}
+
+.new__patient__list li {
+  margin-top: 3px;
+}
+
+.login__button {
+  margin-left: 20px;
+}
+
+fieldset {
+  border: 0;
+}
+
+.big-input {
+  width: 400px;
+}
