@@ -12,15 +12,15 @@ function Login({user, setUser}) {
             </section> : null}
         <p>Password</p>
         <form onSubmit={(event) => {
+            event.preventDefault();
             if(password === pw) {
-                event.preventDefault();
                 setUser("Ann")
             }
         }}>
             <input type="password" value={password} onChange={(event) => {
                 setPassword(event.target.value)
                 }}></input>
-            <button type="submit" className="login__button">Login</button>
+            <button disabled={password === ""} type="submit" className="login__button">Login</button>
         </form>
     </main>
 }

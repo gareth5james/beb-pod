@@ -58,7 +58,7 @@ function App() {
           path="/login"
           element={<Login user={user} setUser={setUser} />}
         />
-        <Route path="*" element={<PathNotFound />} />
+        <Route path="/*" element={<PathNotFound />} />
       </Routes>
       <Foot />
     </div>
