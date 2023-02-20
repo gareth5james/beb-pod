@@ -14,10 +14,13 @@ function Admin ({isLoading, setIsLoading}) {
           .then((gotFees) => {
             setNewFees(gotFees)
         }).then(() => getProducts()).then((gotProducts) => {
+            setIsLoading(false);
             setNewProducts(gotProducts)
         })
-          .catch((error) => console.log(error, "ERROR"));
-        setIsLoading(false);
+          .catch((error) => {
+            setIsLoading(false);
+            console.log(error, "ERROR")
+        });
     }, [])
 
     return <main>

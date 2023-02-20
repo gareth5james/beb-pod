@@ -10,16 +10,19 @@ function Fees({feesTable, setFeesTable, isLoading, setIsLoading, productsTable, 
             setFeesTable(gotFees)
         }).then(() => getProducts()).then((gotProducts) => {
             setProductsTable(gotProducts)
+            setIsLoading(false);
         })
-          .catch((error) => console.log(error, "ERROR"));
-        setIsLoading(false);
+          .catch((error) => {
+            setIsLoading(false);
+            console.log(error, "ERROR")}
+            );
       }, []);
 
     const fees = feesTable;
     const newPatient = fees[0] || {column1: "", column2: "", column3: ""}
     
     return <main className="fees">
-        {isLoading ? <p>Loading...</p> : <table className="fees__table">
+        {isLoading  === true ? <p>Loading...</p> : <table className="fees__table">
             <th colSpan="3"><h2>Fees (2023, subject to change)</h2></th>
             <tbody>
                 <tr>
