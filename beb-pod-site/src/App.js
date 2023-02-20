@@ -10,6 +10,7 @@ import Foot from "./Components/Foot";
 import Fees from "./Components/Fees";
 import Login from "./Components/Login";
 import Admin from "./Components/Admin";
+import PathNotFound from "./Components/PathNotFound";
 
 function App() {
   const [feesTable, setFeesTable] = useState([]);
@@ -57,6 +58,7 @@ function App() {
           path="/login"
           element={<Login user={user} setUser={setUser} />}
         />
+        <Route path="*" element={<PathNotFound />} />
       </Routes>
       <Foot />
     </div>
