@@ -21,7 +21,7 @@ function About() {
             <li className="app__about__name">Annie<br/><img className="app__about__name__image" src={annie} alt="amanda"/></li>
         </ul>
         <p>
-            All our podiatrists are HCPC (Health & Care Professions Council) registered ( Ann was previously state registered until the regulatory body for Allied Health Professionals was changed to the HCPC to include all health & social workers in 2003).<br/><br/>
+            All our podiatrists are HCPC (Health & Care Professions Council) registered.<br/><br/>
         </p>
         <h4>We are members of the:</h4>
         <p>

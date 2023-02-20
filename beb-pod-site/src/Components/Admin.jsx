@@ -4,7 +4,7 @@ import AddFee from "./AddFee";
 import Fee from "./Fee"
 import Product from "./Product"
 
-function Admin ({isLoading, setIsLoading, feesTable, setFeesTable, productsTable, setProductsTable}) {
+function Admin ({isLoading, setIsLoading}) {
     const [newFees, setNewFees] = useState([])
     const [newProducts, setNewProducts] = useState([])
 

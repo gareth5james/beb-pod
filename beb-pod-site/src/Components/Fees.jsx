@@ -57,15 +57,9 @@ function Fees({feesTable, setFeesTable, isLoading, setIsLoading, productsTable, 
             </tbody>
         </table>}
         <p>Gift vouchers in designs for various occasions available for all our services and gift bags of products to your choice.</p>
-        <p><b>* Your first appointment lasts approx. one hour</b> and includes a full podiatry check and initial treatment. Some conditions such as toenail surgery, Lacuna anti fungal nail treatment or orthoses fitting etc will require another appointment.</p>
-        <p>Baseline check:</p>
-        <ol className="new__patient__list">
-            <li>Circulatory - your podiatrist will feel for the pulses in your feet then listen to them with a Doppler (ultrasound) machine. They will assess your foot temperature and colour.</li>
-            <li>Neurological - A 10g monofilament will be applied to specific areas of your feet to check you ability to feel light touch then a 128hz tuning fork is placed on the end of your big toe and ankle bone to assess how well your nerves are sending messages to your brain which can affect your balance or indicate health issues.</li>
-            <li>MSK - your podiatrist will check for any structural anomalies in your feet and legs such as a difference in the length of your legs, flat feet, misaligned knees etc. This will tell us how your foot/leg position is affecting your stance and gait which can lead to pathology.</li>
-            <li>Medical health check - you will be asked to provide details of your general health, GP, tablets and supplements (please bring a list with you) you take. This enables us to ensure we provide the safest treatment tailored to your needs.</li>
-        </ol>
-        <p>Should your podiatrist find any anomalies, they will discuss them with you and develop a treatment plan to address and resolve. If an issue is found that is outside our scope of practice, such as a heart problem or diabetes, we will, with your permission, refer you onto the relevant health professional (usually via your GP) who deals with that particular area of health.</p>
+        <p><b>* Your first appointment lasts approx. one hour</b> and includes a general health check (please bring with you a list of all your medication & any supplements you take), a foot health check – the podiatrist will check your circulation, nerve function and Musculo-skeletal status followed by initial treatment. Please note some treatments such as nail surgery, orthoses, Lacuna will require another appointment.</p>
+        <p></p>
+        <p>Should your podiatrist find any anomalies, they will discuss them with you and develop a treatment plan to address and resolve. If an issue is found that is outside our scope of practice such as a heart problem or diabetes we will; with your permission, refer you onto the relevant health professional (usually via your GP) who deals with that particular area of health.</p>
         <Link to="/login">Login</Link>
     </main>
 }

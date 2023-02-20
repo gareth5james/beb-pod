@@ -23,7 +23,7 @@ export const patchFee = (newFee) => {
 
 export const patchProduct = (newProduct) => {
   const sendProduct = {
-    produce: newProduct.product,
+    product: newProduct.product,
     type: newProduct.type,
     price: newProduct.price,
   };

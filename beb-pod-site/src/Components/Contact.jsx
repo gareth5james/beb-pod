@@ -29,8 +29,8 @@ function Contact() {
         <p>Please attend on time - we are still staggering appointments to operate
         social distancing and allow thorough cleaning of each surgery between patients.<br/><br/>
         Please wash your hands on entry in the sink indicated by your podiatrist.<br/><br/>
-        Wear a face covering - we are a health facility committed to the safety of our patients
-        and staff and entry will be refused if you are not wearing a face covering.<br/><br/>
+        We request you wear a face covering - we are a health facility committed to the safety of our patients
+        and staff.<br/><br/>
         Please DO NOT ATTEND if you have/have symptoms of covid 19</p>
         <h3>Email us</h3>
         <form className="contact__form" action="mailto:annjames.bebpod@btinternet.com" method="post" enctype="text/plain">
