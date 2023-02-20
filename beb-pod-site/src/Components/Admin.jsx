@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { getFees, getProducts } from "../utils/utils";
-import AddFee from "./AddFee";
 import Fee from "./Fee"
 import Product from "./Product"
 
 function Admin ({isLoading, setIsLoading}) {
     const [newFees, setNewFees] = useState([])
     const [newProducts, setNewProducts] = useState([])
+
 
     useEffect(() => {
         setIsLoading(true);
