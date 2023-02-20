@@ -6,10 +6,11 @@ import Product from "./Product"
 function Admin ({isLoading, setIsLoading}) {
     const [newFees, setNewFees] = useState([])
     const [newProducts, setNewProducts] = useState([])
-
+    const [isError, setIsError] = useState(false)
 
     useEffect(() => {
         setIsLoading(true);
+        setIsError(false);
         getFees()
           .then((gotFees) => {
             setNewFees(gotFees)
@@ -19,16 +20,16 @@ function Admin ({isLoading, setIsLoading}) {
         })
           .catch((error) => {
             setIsLoading(false);
-            console.log(error, "ERROR")
+            setIsError(true)
         });
     }, [])
 
     return <main>
-        {isLoading ? <p>Loading...</p> : <section className="set__fees">
+        {isLoading ? <p>Loading...</p> : isError ? <p>Something went wrong, please try again</p> : <section className="set__fees">
             <p>FEES</p>
             {newFees.map(fee =><Fee fee={fee} key={fee.fees_id}/>)}
             </section>}
-        {isLoading ? <p>Loading...</p> : <section className="set__products">
+            {isLoading ? <p>Loading...</p> : isError ? <p>Something went wrong, please try again</p> : <section className="set__products">
             <p>PRODUCTS</p>
             {newProducts.map(product =><Product product={product} key={product.products_id}/>)}
             </section>}

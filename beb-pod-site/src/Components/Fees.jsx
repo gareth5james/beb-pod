@@ -1,10 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getFees, getProducts } from "../utils/utils";
 
 function Fees({feesTable, setFeesTable, isLoading, setIsLoading, productsTable, setProductsTable}) {
+    const [isError, setIsError] = useState(false)
+
     useEffect(() => {
         setIsLoading(true);
+        setIsError(false);
         getFees()
           .then((gotFees) => {
             setFeesTable(gotFees)
@@ -14,15 +17,15 @@ function Fees({feesTable, setFeesTable, isLoading, setIsLoading, productsTable, 
         })
           .catch((error) => {
             setIsLoading(false);
-            console.log(error, "ERROR")}
-            );
+            setIsError(true)
+          });
       }, []);
 
     const fees = feesTable;
     const newPatient = fees[0] || {column1: "", column2: "", column3: ""}
     
     return <main className="fees">
-        {isLoading  === true ? <p>Loading...</p> : <table className="fees__table">
+        {isLoading ? <p>Loading...</p> : isError ? <p>Something went wrong, please try again</p> :<table className="fees__table">
             <th colSpan="3"><h2>Fees (2023, subject to change)</h2></th>
             <tbody>
                 <tr>
@@ -49,7 +52,7 @@ function Fees({feesTable, setFeesTable, isLoading, setIsLoading, productsTable, 
         </table>}
 
         
-        {isLoading ? <p>Loading</p> : <table className="products__table">
+        {isLoading ? <p>Loading...</p> : isError ? <p>Something went wrong, please try again</p> : <table className="products__table">
             <th colSpan="3"><h2>Products</h2></th>
             <tbody>
                 {productsTable.map(product => <tr id={product.products_id}>
