@@ -19,7 +19,7 @@ function Fee({fee}) {
                 return temp;
             })
         }}/>
-        <input value={newFee.column2} onChange={(event) => {
+        <input className="small__input" value={newFee.column2} onChange={(event) => {
             setNewFee((currFee) => {
                 const temp = {...currFee}
 
@@ -28,7 +28,7 @@ function Fee({fee}) {
                 return temp;
             })
         }}/>
-        <input value={newFee.column3} onChange={(event) => {
+        <input className="small__input" value={newFee.column3} onChange={(event) => {
             setNewFee((currFee) => {
                 const temp = {...currFee}
 

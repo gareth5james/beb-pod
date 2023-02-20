@@ -20,7 +20,7 @@ function Product({product}) {
                 return temp;
             })
         }}/>
-        <input value={newProduct.type} onChange={(event) => {
+        <input className="small__input" value={newProduct.type} onChange={(event) => {
             setNewProduct((currProduct) => {
                 const temp = {...currProduct}
 
@@ -29,7 +29,7 @@ function Product({product}) {
                 return temp;
             })
         }}/>
-        <input value={newProduct.price} onChange={(event) => {
+        <input className="small__input" value={newProduct.price} onChange={(event) => {
             setNewProduct((currProduct) => {
                 const temp = {...currProduct}
 
