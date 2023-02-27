@@ -1,24 +1,25 @@
 import ann from "../resources/ann-square.webp"
-import amanda from "../resources/amanda-square.webp"
+import jen from "../resources/jen.png"
 import annette from "../resources/annette-square.webp"
 import elaine from "../resources/elaine-square.webp"
 import rob from "../resources/rob-square.webp"
 import annie from "../resources/annie-square.webp"
+import janice from "../resources/janice.png"
 
 function About() {
     return <main>
         <h2>About Us</h2>
         <h3>Podiatrists</h3>
         <ul className="app__about__pod">
-            <li className="app__about__name">Ann <br/>CH07590<br/><img className="app__about__name__image" src={ann} alt="ann"/></li>
-            <li className="app__about__name">Amanda <br/>CH09926<br/><img className="app__about__name__image" src={amanda} alt="amanda"/></li>
-            <li className="app__about__name">Annette <br/>CH31290<br/><img className="app__about__name__image" src={annette} alt="amanda"/></li>   
+            <li className="app__about__name">Ann <br/>CH07590<br/><img className="app__about__name__image" src={ann} alt="Ann"/></li>
+            <li className="app__about__name">Jen <br/>CH35614<br/><img className="app__about__name__image" src={jen} alt="Jen"/></li>
+            <li className="app__about__name">Annette <br/>CH31290<br/><img className="app__about__name__image" src={annette} alt="Annette"/></li>   
         </ul>
         <h3>Staff</h3>
         <ul className="app__about__staff">
-            <li className="app__about__name">Rob<br/><img className="app__about__name__image" src={rob} alt="amanda"/></li>
-            <li className="app__about__name">Elaine<br/><img className="app__about__name__image" src={elaine} alt="amanda"/></li>
-            <li className="app__about__name">Annie<br/><img className="app__about__name__image" src={annie} alt="amanda"/></li>
+            <li className="app__about__name">Rob<br/><img className="app__about__name__image" src={rob} alt="Rob"/></li>
+            <li className="app__about__name">Elaine<br/><img className="app__about__name__image" src={elaine} alt="Elaine"/></li>
+            <li className="app__about__name">Janice<br/><img className="app__about__name__image" src={janice} alt="Janice"/></li>
         </ul>
         <p>
             All our podiatrists are HCPC (Health & Care Professions Council) registered.<br/><br/>

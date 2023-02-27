@@ -6,7 +6,7 @@ function Contact() {
         <div className="app__contact__address">
         <h2>Located at:</h2>
         <p>
-        <a className="app__contact__link" target="blank" href="https://goo.gl/maps/drn1WZcx4erXdkke8">Bebington Podiatry<br/>
+        <a className="app__contact__link" target="blank" href="https://goo.gl/maps/Kaig3SVtM5owG5ay9">Bebington Podiatry<br/>
         270 Heath Road<br/>
         Higher Bebington<br/>
         Wirral<br/>
@@ -17,7 +17,7 @@ function Contact() {
         </div>
         <div className="app__hours">
             <ul className="app__hours__list">
-                <li className="app__hours__list__day"><span className="day">Monday:</span><span className="hours">0930 - 1230 | 1330 - 1700 | 1800 - 1930</span></li>
+                <li className="app__hours__list__day"><span className="day">Monday:</span><span className="hours">0930 - 1230 | 1330 - 1700 | 1730 - 1930</span></li>
                 <li className="app__hours__list__day"><span className="day">Tuesday:</span><span className="hours">0930 - 1230 | 1330 - 1700</span></li>
                 <li className="app__hours__list__day"><span className="day">Wednesday:</span><span className="hours">0930 - 1230 | 1330 - 1700</span></li>
                 <li className="app__hours__list__day"><span className="day">Thursday:</span><span className="hours">0930 - 1230 | 1330 - 1700</span></li>
