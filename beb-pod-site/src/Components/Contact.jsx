@@ -33,7 +33,8 @@ function Contact() {
         and staff.<br/><br/>
         Please DO NOT ATTEND if you have/have symptoms of covid 19</p>
         <h3>Email us</h3>
-        <form className="contact__form" action="mailto:annjames.bebpod@btinternet.com" name="contact" method="post" enctype="text/plain">
+        <div className="contact__form">
+        <form name="contact" method="post">
             <input type="hidden" name="form-name" value="contact" />
         <p><label htmlFor="Name">Name: </label><input type="text" name="Name" required/></p>
         <p><label htmlFor="Email">Email: </label><input type="email" name="Email" required/></p>
@@ -41,6 +42,7 @@ function Contact() {
         <p><label htmlFor="Message">Message: </label><textarea name="Message" rows="4" cols="40" required/></p>
         <p><label></label><input type="submit" value="Submit message" /></p>
         </form>
+        </div>
         <Map />
     </main>
 }
