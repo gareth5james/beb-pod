@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getFees, getProducts } from "../utils/utils";
+const feesImp = require("../resources/fees.js")
+const prodImp = require("../resources/products.js");
 
 function Fees({feesTable, setFeesTable, isLoading, setIsLoading, productsTable, setProductsTable}) {
     const [isError, setIsError] = useState(false)
@@ -8,17 +10,9 @@ function Fees({feesTable, setFeesTable, isLoading, setIsLoading, productsTable, 
     useEffect(() => {
         setIsLoading(true);
         setIsError(false);
-        getFees()
-          .then((gotFees) => {
-            setFeesTable(gotFees)
-        }).then(() => getProducts()).then((gotProducts) => {
-            setProductsTable(gotProducts)
-            setIsLoading(false);
-        })
-          .catch((error) => {
-            setIsLoading(false);
-            setIsError(true)
-          });
+        setFeesTable(feesImp);
+        setProductsTable(prodImp);
+        setIsLoading(false);
       }, []);
 
     const fees = feesTable;
@@ -28,22 +22,22 @@ function Fees({feesTable, setFeesTable, isLoading, setIsLoading, productsTable, 
         {isLoading ? <p>Loading...</p> : isError ? <p>Something went wrong, please try again</p> :<table className="fees__table">
             <th colSpan="3"><h2>Fees (2023, subject to change)</h2></th>
             <tbody>
-                <tr>
+                <tr key="clin-home">
                     <td></td>
                     <td className="mini__header"><b>Clinic</b></td>
                     <td className="mini__header"><b>Home Visit</b></td>
                 </tr>
-                <tr>
+                <tr key="new-patient">
                     <td>{newPatient.column1} * (see bottom of page for details)</td>
                     <td>{newPatient.column2}</td>
                     <td>{newPatient.column3}</td>
                 </tr>
-                <tr>
+                <tr key="day-eve">
                     <td></td>
                     <td className="mini__header"><b>Daytime</b></td>
                     <td className="mini__header"><b>Evening</b></td>
                 </tr>
-                {fees.slice(1).map(fee => <tr id={fee.fees_id}>
+                {fees.slice(1).map(fee => <tr key={fee.fees_id}>
                     {fee.column2 === "" && fee.column3 === "" ? <td><b>{fee.column1}</b></td> : <td>{fee.column1}</td>}
                     <td>{fee.column2}</td>
                     <td>{fee.column3}</td>
@@ -55,7 +49,7 @@ function Fees({feesTable, setFeesTable, isLoading, setIsLoading, productsTable, 
         {isLoading ? <p>Loading...</p> : isError ? <p>Something went wrong, please try again</p> : <table className="products__table">
             <th colSpan="3"><h2>Products</h2></th>
             <tbody>
-                {productsTable.map(product => <tr id={product.products_id}>
+                {productsTable.map(product => <tr key={product.products_id}>
                     <td><b>{product.product}</b></td>
                     <td>{product.type}</td>
                     <td>{product.price}</td>
