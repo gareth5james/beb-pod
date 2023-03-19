@@ -7,6 +7,7 @@ function Foot() {
             <a target="blank" href="https://www.facebook.com/bebingtonpodiatry"><img id="fb" src={fb} alt="facebook logo"></img></a>
             <Link to="/contact" className="footer__link"><p>annjames.bebpod@btinternet.com<br/>
             0151 608 0927 (24hrs)</p></Link>
+            <Link to="/files/privacy.pdf" target="_blank" download>Privacy Policy</Link>
     </footer>
    
 }

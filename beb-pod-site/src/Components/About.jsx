@@ -1,10 +1,9 @@
 import ann from "../resources/ann-square.webp"
-import jen from "../resources/jen.png"
+import jen from "../resources/jen.webp"
 import annette from "../resources/annette-square.webp"
 import elaine from "../resources/elaine-square.webp"
 import rob from "../resources/rob-square.webp"
-import annie from "../resources/annie-square.webp"
-import janice from "../resources/janice.png"
+import janice from "../resources/janice.webp"
 
 function About() {
     return <main>
