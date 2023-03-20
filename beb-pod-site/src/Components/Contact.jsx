@@ -14,6 +14,8 @@ function Contact() {
         CH63 2HQ<br/><br/></a>
         annjames.bebpod@btinternet.com<br/>
         0151 608 0927 (24hrs)</p>
+        <h3>Bus Routes</h3>
+        <p>464, 16, 17, 487, 73</p>
         </div>
         <div className="app__hours">
             <ul className="app__hours__list">

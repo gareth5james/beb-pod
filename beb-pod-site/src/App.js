@@ -11,6 +11,7 @@ import Fees from "./Components/Fees";
 import Login from "./Components/Login";
 import Admin from "./Components/Admin";
 import PathNotFound from "./Components/PathNotFound";
+import Covid from "./Components/Covid";
 
 function App() {
   const [feesTable, setFeesTable] = useState([]);
@@ -58,6 +59,7 @@ function App() {
           path="/login"
           element={<Login user={user} setUser={setUser} />}
         />
+        <Route path="/covid-19-coronavirus" element={<Covid />} />
         <Route path="/*" element={<PathNotFound />} />
       </Routes>
       <Foot />
