@@ -160,8 +160,6 @@ nav {
   color: rgb(86, 128, 200);
 }
 
-
-
 .map {
   margin-top: 20px;
   width: 90%;
@@ -190,7 +188,7 @@ nav a{
 .fees table {
   text-align: left;
   border-collapse: collapse;
-  margin: 5px;
+  margin: auto;
 }
 
 .fees table td {
@@ -246,4 +244,8 @@ fieldset {
 
 .big-input {
   width: 400px;
+}
+
+.smallPrint {
+  font-size: small;
 }

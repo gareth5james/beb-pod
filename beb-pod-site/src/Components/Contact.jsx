@@ -19,12 +19,13 @@ function Contact() {
         </div>
         <div className="app__hours">
             <ul className="app__hours__list">
-                <li className="app__hours__list__day"><span className="day">Monday:</span><span className="hours">0930 - 1230 | 1330 - 1700 | 1730 - 1930</span></li>
+                <li className="app__hours__list__day"><span className="day">Monday:</span><span className="hours">0930 - 1230 | 1330 - 1700 | 1730 - 1930*</span></li>
                 <li className="app__hours__list__day"><span className="day">Tuesday:</span><span className="hours">0930 - 1230 | 1330 - 1700</span></li>
                 <li className="app__hours__list__day"><span className="day">Wednesday:</span><span className="hours">0930 - 1230 | 1330 - 1700</span></li>
                 <li className="app__hours__list__day"><span className="day">Thursday:</span><span className="hours">0930 - 1230 | 1330 - 1700</span></li>
                 <li className="app__hours__list__day"><span className="day">Friday - Sunday:</span><span className="hours">Closed</span></li>
             </ul>
+            <p className="smallPrint">*Where Monday falls on a Bank Holiday, the surgery will be closed and will open on Tuesday until 1930 for our patients requiring an evening appointment.</p>
         </div>
         </div>
         <h2>At your appointment</h2>
